@@ -9,7 +9,7 @@
   </head>
   <body>
     <section class="main-content">
-      <h2 id="hello there">Projects</h2>
+      <h1>Projects</h1>
 
       <footer class="site-footer">
         <span class="site-footer-credits">I think this is working </span>
