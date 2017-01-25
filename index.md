@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en-us">
   <head>
     <meta charset="UTF-8">
@@ -9,13 +8,8 @@
     <link rel="stylesheet" href="/assets/css/style.css?v=46959db576ab4d313d127b8a3bd10fb7710d5dea">
   </head>
   <body>
-    <section class="page-header">
       <h1 class="project-name">Katlin Kiefer</h1>
       <h2 class="project-tagline"></h2>
-      
-      
-    </section>
-
     <section class="main-content">
       <h2 id="hello there">Projects</h2>
 
