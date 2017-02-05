@@ -10,12 +10,8 @@
   <body>
     <section class="main-content">
       <h1>Projects</h1>
-
-      <footer class="site-footer">
-        <span class="site-footer-credits">I think this is working </span>
-      </footer>
+      <h2>Assignment 1</h2>
+       <a href="bootstrap\starter.htm">jQuery Mobile Site</a><br/>
     </section>
-
-    
   </body>
 </html>
