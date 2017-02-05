@@ -12,7 +12,7 @@
     <section class="main-content">
       <h1>Projects</h1>
       <h2>Assignment 1</h2>
-       <a href="bootstrap\starter.htm">jQuery Mobile Site</a><br/>
+       <a href="jQueryMobile.html">jQuery Mobile Site</a><br/>
     </section>
   </body>
 </html>
