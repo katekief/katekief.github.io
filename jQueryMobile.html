@@ -1,11 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1"> 
-    <link rel="stylesheet" href="themes/Lilac.min.css" />
-    <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />       
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
-    <link rel="shortcut icon" type="image/png" href="favicon/k3.png" />
+    <link rel="shortcut icon" type="image/png" href="favicon/k1.png" />
     <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
     <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
     <script>
@@ -17,7 +15,7 @@
     </script>
 </head>
 <body>
-    <div data-role="page" id="home">
+    <div data-role="page" id="home" data-theme="b">
         <div data-role="header">
             <h1>Home</h1>
             <div data-role="navbar">
@@ -30,25 +28,29 @@
         <div data-role="main" class="ui-content">
             <p>This is my jQuery Mobile site!</p>
             <p></p>
-
                 <div data-role="collapsibleset">
                     <div data-role="collapsible" data-collapsed-icon="arrow-d" data-expanded-icon="arrow-u">
                         <h3>About Me</h3>
-                        <p>I'm the expanded content.</p>
+                        <p>My name is Katlin Kiefer and I am a senior CIS student at Missouri State. 
+                        I have just recently applied to add a minor in Web App Development. My goal is to 
+                        graduate this spring and move back to my home of Springfield, IL. </p>
                     </div>
                     <div data-role="collapsible" data-collapsed-icon="arrow-d" data-expanded-icon="arrow-u">
                         <h3>About jQuery Mobile</h3>
-                        <p>I'm the expanded content.</p>
+                        <p>jQuery Mobile is a touch-optimized web framework (also known as a mobile framework), 
+                        more specifically a JavaScript library, developed by the jQuery project team. 
+                        jQuery Mobile works on all popular smartphones and tablets. jQuery Mobile uses HTML5 
+                        & CSS3 for laying out pages with minimal scripting.</p>
                     </div>        
                 </div>
         </div>
 
         <div data-role="footer">
-            <h2>Whateves</h2>
+            <h2><a href="https://jquerymobile.com">Download jQuery Mobile</a></h2>
         </div>
     </div>
 
-    <div data-role="page" id="contact">
+    <div data-role="page" id="contact" data-theme="b">
         <div data-role="header">
             <h1>Contact</h1>
             <div data-role="navbar">
@@ -62,19 +64,19 @@
         <div data-role="main" class="ui-content">
             <h2>Contact Information</h2>
             <p>Katlin Kiefer<br />
-               Email: <br />
-               Phone: <br />
-               Address: </p>
+               Email: Kiefer895@live.missouristate.edu<br />
+               Phone: 217-899-1411<br />
+               Address: 533 E. Bear Blvd, Springfield MO, 65806</p>
         </div>
 
         <div data-role="footer" style="text-align:center;">
-            <a href="www.facebook.com"> <img src="icons/facebook.png"style="width:20px;height:20px;border:0;">
-               Friend Me on Facebook</a>
-            <a href="www.twitter.com">
-                <img src="icons/twitter.png" style="width:20px;height:20px;border:0;">
-                Follow Me on Twitter</a>
+                    <a href="https://www.facebook.com"> <img src="icons/facebook.png" class="ui-icon-left">
+                        Friend Me on Facebook
+                    </a>
+                    <a href="https://www.twitter.com"> <img src="icons/twitter.png" class="ui-icon-left">
+                    Follow Me on Twitter
+                </a>
         </div>
-
     </div>
 </body>
 </html>
