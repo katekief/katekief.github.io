@@ -1,0 +1,263 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<style>
+    body, h1, h2, h3, h4, h5 {
+        font-family: "Georgia", sans-serif;
+    }
+
+    p {
+    font-family: "Times New Roman", Times, serif;
+    }
+    body {
+        font-size: 16px;
+    }
+
+    .w3-half img {
+        margin-bottom: -6px;
+        margin-top: 16px;
+        opacity: 0.8;
+        cursor: pointer;
+    }
+
+    img{
+   
+        height: 200px;
+
+        }
+        .w3-half img:hover {
+            opacity: 1;
+        }
+</style>
+</head>
+<body ng-app="">
+        <nav class="w3-sidenav w3-light-grey w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidenav">
+            <br>
+            <a href="javascript:void(0)" onclick="w3_close()" class="w3-padding-xlarge w3-hide-large w3-display-topleft w3-hover-white" style="width:100%;font-size:22px">Close Menu</a>
+            <div class="w3-container">
+                <img src="/pictures/megatravellogo.png" style="width:100%" onclick="" alt="Mega Travel">
+            </div>
+            <a href="#" onclick="w3_close()" class="w3-padding w3-hover-white w3-text-indigo">Home</a>
+            <a href="#details" onclick="w3_close()" class="w3-padding w3-hover-white w3-text-indigo">Trip Activites</a>
+            <a href="#travel" onclick="w3_close()" class="w3-padding w3-hover-white w3-text-indigo">Travel with Us</a>
+        </nav>
+
+        <!-- Top menu on small screens -->
+        <header class="w3-container w3-top w3-hide-large w3-orange w3-xlarge w3-padding">
+            <a href="javascript:void(0)" class="w3-button w3-orange w3-margin-right" onclick="w3_open()">☰</a>
+            <span>Mega Travel</span>
+        </header>
+
+        <!-- Overlay effect when opening sidenav on small screens -->
+        <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+        <!-- !PAGE CONTENT! -->
+        <div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+            <!-- Header -->
+            <div class="w3-container" style="margin-top:80px" id="showcase">
+                <h1 class="w3-jumbo"><b>Choose Your Trip</b></h1>
+                <h1 class="w3-xxxlarge w3-text-orange"><b>Destinations</b></h1>
+                <hr style="width:50px;border:5px solid royalblue" class="w3-round">
+            </div>
+
+            <!-- Photo grid (modal) -->
+            <div class="w3-row-padding w3-margin-top">
+                <div class="w3-third">
+                    <div class="w3-card-2">
+                        <img src="pictures/brisbane.jpg" style="width:100%">
+                        <div class="w3-container">
+                            <h5>Brisbane, Australia</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w3-third">
+                    <div class="w3-card-2">
+                        <img src="pictures/vancouver.jpg" style="width:100%">
+                        <div class="w3-container">
+                            <h5>Vancouver, Canada</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w3-third">
+                    <div class="w3-card-2">
+                        <img src="pictures/ny.jpg" style="width:100%">
+                        <div class="w3-container">
+                            <h5>New York City, United States</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="w3-row-padding w3-margin-top">
+                    <div class="w3-third">
+                        <div class="w3-card-2">
+                            <img src="pictures/berlin.jpg" style="width:100%">
+                            <div class="w3-container">
+                                <h5>Berlin, Germany</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="w3-third">
+                        <div class="w3-card-2">
+                            <img src="pictures/cancun.jpg" style="width:100%">
+                            <div class="w3-container">
+                                <h5>Cancun, Mexico</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+                <!-- details -->
+                <div class="w3-container" id="details" style="margin-top:75px">
+                    <h1 class="w3-xxxlarge w3-text-orange"><b>Trip Activities</b></h1>
+                    <hr style="width:50px;border:5px solid royalblue" class="w3-round">
+                    <p><b>Each destination features a variety of different activies to make the most of your vacation</b>:</p>
+                </div>
+                <div class="w3-row-padding w3-grayscale">
+                    <div class="w3-col m4 w3-margin-bottom">
+                        <div class="w3-light-grey">
+                            <img src="/pictures/cyclingbrisbane.jpg" alt="Cycling" style="width:100%">
+                            <div class="w3-container">
+                                <h3>Brisbane</h3>
+                                <p>City Tours, Sports, Cycling, Museums, Boating</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w3-col m4 w3-margin-bottom">
+                        <div class="w3-light-grey">
+                            <img src="/pictures/hikingvancouver.jpg" alt="Hiking" style="width:100%">
+                            <div class="w3-container">
+                                <h3>Vancouver</h3>
+                                <p>Museums, Sailing, Beach, Hiking, Boating</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w3-col m4 w3-margin-bottom">
+                        <div class="w3-light-grey">
+                            <img src="/pictures/theaterny.jpg" alt="Theater" style="width:100%">
+                            <div class="w3-container">
+                                <h3>New York City</h3>
+                                <p>Museums, Theatre, Parks and Recreation, City Tours</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w3-col m4 w3-margin-bottom">
+                        <div class="w3-light-grey">
+                            <img src="/pictures/citytourberlin.jpg" alt="City Tour" style="width:100%">
+                            <div class="w3-container">
+                                <h3>Berlin</h3>
+                                <p>City Tours, Museums, Cycling</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w3-col m4 w3-margin-bottom">
+                        <div class="w3-light-grey">
+                            <img src="/pictures/snorkelingcancun.jpg" alt="Snorkeling" style="width:100%">
+                            <div class="w3-container">
+                                <h3>Cancun</h3>
+                                <p>Parks and Recreation, Beaches, Boating, Snorkeling</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- travel -->
+                <div class="w3-container" id="travel" style="margin-top:75px">
+                    <h1 class="w3-xxxlarge w3-text-orange"><b>Travel with Us</b></h1>
+                    <hr style="width:50px;border:5px solid royalblue" class="w3-round">
+                    <p>Fill out the form below and a travel agent will get back to you shortly!</p>
+                    <form action="" target="">
+                        <div class="w3-group">
+                            Full Name: <input name="fullname" ng-model="name" required>
+                        </div>
+                        <div class="w3-group">
+                           Email: <input type="email" name="email" ng-model="email">
+                        </div>
+                        <div class="w3-group">
+                            Phone: <input type="tel" name="phone" ng-model="phone">
+                        </div>
+                        <div class="w3-group">
+                            <label>Number of Adults:</label>
+                            <input class="text" type="text" name="Adult Count" required>
+                            <label>Number of Children:</label>
+                            <input class="" type="text" name="Child Count" required>
+                        </div>
+                        Destination:
+                        <select ng-model="des">
+                            <option value="brisbane">Brisbane
+                            <option value="vancouver">Vancouver
+                            <option value="nyc">New York City
+                            <option value="vancouver">Berlin
+                            <option value="nyc">Cancun
+                        </select>
+                 
+                    <p style="color:royalblue">Activities:</p>
+                    <div ng-switch="des">
+                        <div ng-switch-when="brisbane">
+                            <p style="color:royalblue">City Tours, Sports, Cycling, Museums, Boating</p>
+                        </div>
+                        <div ng-switch-when="vancouver">
+                            <p style="color:royalblue">Museums, Sailing, Beach, Hiking, Boating</p>
+                        </div>
+                        <div ng-switch-when="nyc">
+                            <p style="color:royalblue">Museums, Theatre, Parks and Recreation, City Tours</p>
+                        </div>
+                        <div ng-switch-when="berlin">
+                            <p style="color:royalblue">City Tours, Museums, Cycling</p>
+                        </div>
+                        <div ng-switch-when="cancun">
+                            <p style="color:royalblue">Parks and Recreation, Beaches, Boating, Snorkeling</p>
+                        </div>
+                        <div ng-switch-default>
+                            <p><i>Select a Destination</i></p>
+                        </div>
+                    </div>
+                      Start Date: <input type="date" id="departDate" name="depart" ng-model="depart"
+                               placeholder="yyyy-MM-dd" min="2017-03-03" max="2018-03-03" required />
+                      Return Date: <input type="date" id="returnDate" name="return" ng-model="return"
+                               placeholder="yyyy-MM-dd" min="2017-03-03" max="2018-03-03" required />
+                        <br />
+                        <br />
+                        <button type="submit" class="w3-button w3-block w3-padding-large w3-blue w3-margin-bottom">Submit</button>
+                        <button type="reset" class="w3-button w3-block w3-padding-large w3-blue w3-margin-bottom">Reset</button>
+                </form>
+                </div>
+                <!-- End page content -->
+            </div>
+           
+
+            <div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></p></div>
+
+            <script>
+                // Script to open and close sidenav
+                function w3_open() {
+                    document.getElementById("mySidenav").style.display = "block";
+                    document.getElementById("myOverlay").style.display = "block";
+                }
+
+                function w3_close() {
+                    document.getElementById("mySidenav").style.display = "none";
+                    document.getElementById("myOverlay").style.display = "none";
+                }
+
+                var app = angular.module('myApp', []);
+                app.controller('myCtrl', function ($scope) {
+                    $scope.name = "John Doe";
+
+                var app = angular.module('myApp', []);
+                    app.controller('myCtrl', function ($scope) {
+                        $scope.email = "John Doe";
+                    });
+                });
+            </script>
+
+    </body>
+</html>
